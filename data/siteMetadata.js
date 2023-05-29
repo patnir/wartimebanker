@@ -5,7 +5,7 @@ const siteMetadata = {
   description: 'A blog about banking and finance',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://wartimebanker.vercel.app',
+  siteUrl: 'https://globalbankerbanker.vercel.app',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
