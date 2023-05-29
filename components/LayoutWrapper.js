@@ -1,6 +1,6 @@
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import Logo from '@/data/logo.svg'
+import Logo from 'public/static/images/logo.png'
 import Link from './Link'
 import SectionContainer from './SectionContainer'
 import Footer from './Footer'
@@ -16,7 +16,11 @@ const LayoutWrapper = ({ children }) => {
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
                 <div className="mr-3">
-                  <Logo />
+                  <img
+                    src="/static/images/logo.png"
+                    alt="logo"
+                    className="h-10 w-10 sm:h-12 sm:w-12"
+                  />
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
                   <div className="hidden h-6 text-2xl font-semibold sm:block">
