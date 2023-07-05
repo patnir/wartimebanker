@@ -16,6 +16,7 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }) {
+  console.log(posts)
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
@@ -32,6 +33,9 @@ export default function Home({ posts }) {
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
+            console.log(slug)
+            console.log(date)
+
             return (
               <li key={slug} className="py-12">
                 <article>
